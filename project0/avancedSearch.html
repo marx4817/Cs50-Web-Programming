@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .vh{
+            height: 100vh;
+            padding: 0px;
+        }
+        a.lnk:hover{
+            border-bottom: 5px solid black;
+            color:rgb(31, 29, 34);
+        }
+
+        div.wd{
+            width: 65%;
+        }
+    </style>
+</head>
+<body>
+    <div class="w-100 bg-light vh">
+        <div class="bg-light">
+            <nav class="navbar navbar-expand-lg mb-3">
+                <div class="container-fluid d-flex">
+                    <div class="ps-4 fs-4" style="width: 80%;">
+                        Google
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-lg-0 ">
+                            <li class="nav-item mx-3"><a class="text-decoration-none fs-5 lnk"  href="index.html">Google Search</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="w-100 ps-5 mt-2 text-danger fs-5 fw-bold mb-4">
+                Advanced Search
+            </div>
+            <hr class=""/>
+        </div>
+        <div class="d-flex">
+            <div class="ps-5 wd">
+                <form class="pt-2" action="https://www.google.com/search" method="get">
+                    <div class="fs-5 mb-3">
+                        <span>Find pages with...</span>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="w-25">
+                            <label for="all">All these words:</label>
+                        </div>
+                        <div class="w-75">
+                            <input type="text" name="as_q" id="all" class="w-100"/>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="w-25">
+                            <label for="this">this exact word or phrase:</label>
+                        </div>
+                        <div class="w-75">
+                            <input type="text" name="as_epq" id="this" class="w-100"/>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="w-25">
+                            <label for="any">any of these words:</label>
+                        </div>
+                        <div class="w-75">
+                            <input type="text" name="as_oq" id="any" class="w-100"/>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="w-25">
+                            <label for="none">none of these words:</label>
+                        </div>
+                        <div class="w-75">
+                            <input type="text" name="as_eq" id="none" class="w-100"/>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <input type="submit" name="" value="Avanced Search" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
